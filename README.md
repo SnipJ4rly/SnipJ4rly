@@ -55,9 +55,10 @@
 
 ###
 
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/SnipJ4rly/SnakeGame/raw/main/dist/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/SnipJ4rly/SnakeGame/raw/main/dist/github-snake.svg" />
+  <img alt="github-snake" src="https://github.com/SnipJ4rly/SnakeGame/raw/main/dist/github-snake.svg" />
+</picture>
 
 ###
