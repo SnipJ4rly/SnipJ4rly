@@ -25,9 +25,9 @@ Here are some ideas to get you started:
 
 
 ## About me:
-- 😄 Fun fact: I'm a React developer before, worked in UPN
+- 😄 Fun fact: I'm a Linux fan
 - 🔭 I’m looking to collaborate on commercial projects and startups
-- 📫 How to reach me: [Email](himerjhelycondorluna@gmail,com)
+- 📫 How to reach me: [Email](https://gmail.com/himerjhelycondorluna@gmail,com)
 - 💬 Ask me about `Frontend` or `Backend`
 
 <img align="right" src="[https://img.freepik.com/foto-gratis/superheroe-preparado-actuar_1048-1700.jpg](https://drive.google.com/drive/folders/1ncv-JQg9D0KerH3-lVYbfFTipTK5qIYq)" width="250" >
