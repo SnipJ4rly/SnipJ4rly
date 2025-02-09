@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout del repositorio
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Usa la última versión estable
 
       - name: Generar github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Subir archivos generados como artefactos
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Se actualizó a la versión v4
         with:
           name: github-contribution-grid-snake
           path: dist/
