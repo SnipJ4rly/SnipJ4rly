@@ -15,12 +15,12 @@ Here are some ideas to get you started:
 
 <h1 align="center">Hi, I'm Jerly 👋 </h1>
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=taozhi8833998.taozhi883398&left_color=royalblue&right_color=black"  />
-<h3 align="center">Aspiring Full Stack Developer from Perù </h3>
+<h3 align="center">Aspiring to become a Full Stack Developer. I'm from Perù</h3>
 
 ❤️ I prefer React on frontend and Node.js with MySQL and/or MongoDB and/or PostgreSQL on backend
 🤔 I'm currently working on Kubernetes with edge computing.
 
-✨ I study: React, Kubernetes, Rust, Nodejs, Bash, Linux
+✨ I study: React, Kubernetes, Nodejs, Bash, Linux
 
 
 
@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: [Email](himerjhelycondorluna@gmail,com)
 - 💬 Ask me about `Frontend` or `Backend`
 
-<img align="right" src="[https://octodex.github.com/images/welcometocat.png](https://i.pinimg.com/736x/9d/a9/fb/9da9fbaa77d6da56b4e11d1cb1d8e8f5.jpg)" width="300">
+<img align="right" src="https://img.freepik.com/psd-gratis/adorable-representacion-3d-pinguino_191095-87145.jpg" width="300">
 
 ## My stack:
 - 1+ years of experience in React, Node.js
