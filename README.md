@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: [Email](himerjhelycondorluna@gmail,com)
 - 💬 Ask me about `Frontend` or `Backend`
 
-<img align="right" src="https://img.freepik.com/foto-gratis/superheroe-preparado-actuar_1048-1700.jpg" width="250" style="filter: brightness(0) invert(1) opacity(0.8);">
+<img align="right" src="[https://img.freepik.com/foto-gratis/superheroe-preparado-actuar_1048-1700.jpg](https://drive.google.com/drive/folders/1ncv-JQg9D0KerH3-lVYbfFTipTK5qIYq)" width="250" >
 
 
 
