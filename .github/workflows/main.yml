@@ -1,0 +1,42 @@
+ombre: generar animación
+
+sobre:  
+- funcione automáticamente cada 24 horas  
+horarios:    
+- cron: "0 */12 * * * *"     
+
+Permite ejecutar el trabajo manualmente en cualquier momento  
+flujo de trabajo.dispatch:    
+
+Corre en cada empuje en la rama principal  
+empuje:    
+ramas:    
+- principal
+
+los puestos de trabajo:  
+generar:    
+Corrida: ubuntu-latest    
+los minutos de espera: 10        
+
+pasos:      
+- genera un juego de serpientes de un usuario de github (Gitub.user.name.name.) gráfico, salida de una animación svg en el .svg.out.path.      
+- nombre: generar github-contribution-grid-snake.svg        
+usos: Platane/snk/svg-only.v3        
+con:          
+github.user.name: $. github.repository.owner}}          
+salidas:            
+dist/github-contribution-grid-snake.svg            
+dist/github-contribution-grid-snake-dark.svg? paleta=github-oscura        
+env:          
+GITHUB.TOKEN: Secrets de $.GITHUB.TOKEN}}                          
+
+
+Empuja el contenido de "build-dir" a una rama      
+El contenido estará disponible en https://raw.githubusercontent.com/.github.user./opospository./o target-branch./ofile, o como página de github      
+- nombre: empuja github-contribution-grid-snake.svg a la rama de salida        
+usos: locura-max/gasction-github-pages.v3.1.0        
+con:          
+target-branch: salida          
+build.dir: desnt        
+env:          
+GITHUB.TOKEN: Secrets de $.GITHUB.TOKEN}} 
