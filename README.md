@@ -30,7 +30,8 @@ Here are some ideas to get you started:
 - 📫 How to reach me: [Email](himerjhelycondorluna@gmail,com)
 - 💬 Ask me about `Frontend` or `Backend`
 
-<img align="right" src="https://img.freepik.com/psd-gratis/adorable-representacion-3d-pinguino_191095-87145.jpg" width="300">
+<img align="right" src="https://img.freepik.com/foto-gratis/superheroe-preparado-actuar_1048-1700.jpg" width="300" style="mix-blend-mode: multiply;">
+
 
 ## My stack:
 - 1+ years of experience in React, Node.js
