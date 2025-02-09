@@ -1,42 +1,42 @@
-ombre: generar animación
+name: Generar animación
 
-sobre:  
-- funcione automáticamente cada 24 horas  
-horarios:    
-- cron: "0 */12 * * * *"     
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Corre automáticamente cada 24 horas
+  workflow_dispatch:  # Permite ejecutar manualmente el flujo de trabajo
+  push:
+    branches:
+      - main  # Corre en cada empuje en la rama principal
 
-Permite ejecutar el trabajo manualmente en cualquier momento  
-flujo de trabajo.dispatch:    
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
 
-Corre en cada empuje en la rama principal  
-empuje:    
-ramas:    
-- principal
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
 
-los puestos de trabajo:  
-generar:    
-Corrida: ubuntu-latest    
-los minutos de espera: 10        
+      - name: Generar github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-pasos:      
-- genera un juego de serpientes de un usuario de github (Gitub.user.name.name.) gráfico, salida de una animación svg en el .svg.out.path.      
-- nombre: generar github-contribution-grid-snake.svg        
-usos: Platane/snk/svg-only.v3        
-con:          
-github.user.name: $. github.repository.owner}}          
-salidas:            
-dist/github-contribution-grid-snake.svg            
-dist/github-contribution-grid-snake-dark.svg? paleta=github-oscura        
-env:          
-GITHUB.TOKEN: Secrets de $.GITHUB.TOKEN}}                          
+      - name: Subir archivos generados como artefactos
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-contribution-grid-snake
+          path: dist/
 
-
-Empuja el contenido de "build-dir" a una rama      
-El contenido estará disponible en https://raw.githubusercontent.com/.github.user./opospository./o target-branch./ofile, o como página de github      
-- nombre: empuja github-contribution-grid-snake.svg a la rama de salida        
-usos: locura-max/gasction-github-pages.v3.1.0        
-con:          
-target-branch: salida          
-build.dir: desnt        
-env:          
-GITHUB.TOKEN: Secrets de $.GITHUB.TOKEN}} 
+      - name: Empujar github-contribution-grid-snake.svg a la rama de salida
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
